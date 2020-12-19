@@ -1,0 +1,16 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasRecordId">
+<lightning:card>
+    
+    <center><lightning:icon iconName="utility:connected_apps" size="small"/>
+        Simple Lightning Record Edit Form</center>
+    <br/>
+    <lightning:recordEditForm recordId="0014x000002mAlvAAE" objectApiName="Account" onsuccess="{!c.handleSuccess}">
+        <lightning:messages />
+        <center><lightning:outputField fieldName="Id" /></center>
+        <lightning:inputField fieldName="Name" />
+        <lightning:inputField fieldName="Industry" />
+        <lightning:inputField fieldName="Phone" />
+        <lightning:button class="slds-m-top_small" variant="brand" type="submit" name="Save" label="Save" />
+    </lightning:recordEditForm>
+</lightning:card>
+</aura:component>
