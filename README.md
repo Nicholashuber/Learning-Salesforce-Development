@@ -3,10 +3,10 @@ I created this repo to help others teach themselves by examples and to help how 
 I will be updating this frequently and providing an ordering on what modules to tackle in order.
 
 
-# Hello World
+# 1) Hello World
 
 
-# DML Operations
+# 2) DML Operations
 
 
-# Triggers
+# 3) Triggers
