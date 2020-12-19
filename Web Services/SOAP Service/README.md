@@ -2,7 +2,7 @@
 
 SOAP has been preferred for services within the enterprise
 <br/>
-<br/>
+<br/><br/>
 SOAP stands for Simple Object Access protocol.
 
 SOAP messages are in XML format and sent over HTTP.
