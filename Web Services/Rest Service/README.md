@@ -1,6 +1,7 @@
 # Rest Service examples.
 
-REST has been preferred for services that are exposed as public APIs.
+REST is preferred for services that are exposed as public APIs.
+<br/><br/>
 
 REST stands for Representational State Transfer;
 
