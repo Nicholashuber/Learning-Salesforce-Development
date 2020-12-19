@@ -1,0 +1,68 @@
+public class SandboxDataSeeding {
+    
+    public SandboxDataSeeding() {//Init by calling new SandboxDataSeeding();
+        CreateLead();
+        CreateAccount();
+    }
+    
+    public static void CreateLead() {
+        Lead lstLead =   new Lead();
+        lstLead.Company = 'Huber Dev LLC';
+        lstLead.LastName = 'Huber';
+        lstLead.FirstName = 'Nicholas';
+        lstLead.Status = 'Open';               
+        insert lstLead;                   
+    }
+    
+    public static void CreateAccount(){
+        Account a = new Account();
+        a.Name = 'Test Account';
+        a.Industry = 'Retail';        
+        insert a;
+        
+        CreateOpportunity(a);
+        CreateCase(a);
+        CreateContact(a);
+        CreateTask(a);
+    }
+    
+    public static void CreateOpportunity(Account a){             
+        Opportunity o = new Opportunity();
+        o.name = 'Test Opportunity';
+        o.AccountId = a.Id;
+        o.StageName = 'Closed Won';
+        o.CloseDate = date.today();
+        o.Type = 'New Customers';        
+        insert o;
+    }
+
+    public static void CreateCase(Account a){             
+        Case o = new Case();
+        o.Subject = 'Test Case';
+        o.AccountId = a.Id;
+        o.Status = 'New';
+        o.Origin = 'Web';
+        o.Type = 'Other';        
+        insert o;
+    }
+    
+    public static void CreateContact(Account a){             
+        Contact c = new Contact();
+        c.AccountId = a.ID;
+        c.FirstName = 'FirstName';
+        c.LastName = 'LastName';
+        c.email = 'test@test.com';
+        c.birthdate = Date.newInstance(1995, 02, 17);
+        insert c;
+    }
+    
+    public static void CreateTask(Account a){   
+        Task t = new Task();
+        t.Subject = 'Test Task';
+        t.Status = 'Open';
+        t.Priority = 'Normal';
+        t.WhatId = a.ID;
+        t.OwnerId = UserInfo.getUserId();
+        insert t;
+    }
+}
