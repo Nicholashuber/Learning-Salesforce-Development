@@ -1,0 +1,7 @@
+.THIS {
+  min-width:430px;
+  max-width:620px;
+}
+.THIS .slds-form{
+  padding: 5px;
+}
