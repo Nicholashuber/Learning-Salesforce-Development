@@ -11,7 +11,7 @@ Defining an Apex method as a SOAP web service is very easy.
 
 The method needs to be placed in a global class and must use the keyword 'webservice'.
 
-
+/r /r \r
 
 
 External application can call your SOAP web service by using the class WSDL.
