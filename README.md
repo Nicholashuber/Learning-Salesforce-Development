@@ -9,8 +9,9 @@ I will be updating this frequently and providing an order to what modules to tac
 
 # 2) DML Operations
 
+# 3) Sandbox Seeding
 
-# 3) Triggers
+# 4) Triggers
 
 
-# 4) Process Builder to Apex
+# 5) Process Builder to Apex
