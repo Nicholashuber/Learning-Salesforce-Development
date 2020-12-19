@@ -1,4 +1,4 @@
-# Platform Events are best used when needing to implement a "Subscribe and Push Topic" Paradigmn in programming
+# Platform Events are best used when needing to implement a "Subscribe and Push Topic" paradigm.
 PushTopic events provide a secure and scalable way to receive notifications for changes to Salesforce data that match a SOQL query you define.
 Use PushTopic events to:
 
