@@ -1,3 +1,17 @@
-trigger Old_New_Trigger on Account (after insert) {
-
+trigger Old_New_Trigger on Account (before update) {
+    
+    if (Trigger.isUpdate) {
+  
+        for (Account account: Trigger.new) {
+            Account oldAcc = Trigger.oldMap.get(account.Id);
+            
+            if (account.Phone != null && oldAcc.Phone != account.Phone) {
+                account.Description = 'Updated phone is NOT the same';
+            }
+            if (account.Phone != null && oldAcc.Phone == account.Phone) {
+                account.Description = 'Updated phone is the same';
+            }
+        }       
+    }
+    
 }
