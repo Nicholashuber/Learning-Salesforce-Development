@@ -1,0 +1,33 @@
+<aura:component controller="ApexLC_Recordid_controller" implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes,force:hasRecordId" access="global">
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+   <aura:attribute name="objClassController" type="ApexLC_Recordid_controller"/>
+    <aura:attribute name="rid" type="String" default="{!v.recordId}" access="global" />
+    
+  
+    
+    
+<article class="slds-card">
+  <div class="slds-card__header slds-grid">
+    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-standard-account" title="account">
+
+          <span class="slds-assistive-text">account</span>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <h2 class="slds-card__header-title">
+          
+            <span>Information</span>
+          
+        </h2>
+      </div>
+      <div class="slds-no-flex">
+          <button class="slds-button slds-button_neutral">Submit</button>
+      </div>
+    </header>
+  </div>
+ <!-- <div class="slds-card__body slds-card__body_inner">Anything can go into the card body</div>-->
+
+</article>    
+</aura:component>

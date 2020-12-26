@@ -1,0 +1,31 @@
+public class ApexLC_Recordid_controller {
+
+    @AuraEnabled
+	  public String oppid { get; set; }
+    @AuraEnabled
+	  public String accid { get; set; }
+
+    @AuraEnabled
+    public Account currentRecord{get; set;}
+    @AuraEnabled
+    public Opportunity oppRecord{get; set;}
+
+
+    @AuraEnabled
+    public static ApexLC_Recordid_controller initClass(String key){
+        //create class instance
+        ApexLC_Recordid_controller obj = new ApexLC_Recordid_controller();
+        //set value in class properties
+ 
+        obj.currentRecord = [SELECT Id FROM Account WHERE Opportunity__c  = :key order by CreatedDate desc limit 1];
+        obj.oppRecord = [SELECT Id,AccountID__c FROM Opportunity WHERE id  = :key limit 1];
+        obj.oppid = key;
+        obj.accid = obj.oppRecord.AccountID__c;
+      
+        // query accounts list for lstOfAccount property
+       //obj.lstOfAccount = [select id,name from account LIMIT 10];
+ 
+       // return class instance
+       return obj;
+   }    
+}
