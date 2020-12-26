@@ -1,0 +1,20 @@
+public class AutoConvertLeads {
+        
+    @InvocableMethod   
+    public static void LeadAssign(List<Lead> LeadIds) {
+        
+        for(Lead currLead: LeadIds){
+            
+            Database.LeadConvert Leadconvert = new Database.LeadConvert(); 
+            
+            Leadconvert.setLeadId(currLead.Id); 
+            LeadStatus Leads= [SELECT Id, MasterLabel FROM LeadStatus WHERE IsConverted=true ];            
+            Leadconvert.setConvertedStatus(Leads.MasterLabel);
+            
+            Database.LeadConvertResult Leadconverts = Database.convertLead(Leadconvert);
+            
+        }
+        
+    }
+    
+}
