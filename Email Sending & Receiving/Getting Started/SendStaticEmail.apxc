@@ -1,0 +1,21 @@
+public class SendStaticEmail {
+    
+    public void SendEmail(){
+        Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
+        
+        //Please change the emails listed below:
+        message.toAddresses = new String[] { 'throwawayemail1gmail.com', 'throwawayemail2gmail.com' };
+        message.optOutPolicy = 'FILTER';
+        message.subject = 'Subject Test Message';
+        message.plainTextBody = 'This is the message body.';
+        
+        Messaging.SingleEmailMessage[] messages =   new List<Messaging.SingleEmailMessage> {message};
+		    Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
+        
+        if (results[0].success) {
+            System.debug('The email was sent successfully.');
+        } else {
+            System.debug('The email failed to send: ' + results[0].errors[0].message);
+        }
+    }    
+}
