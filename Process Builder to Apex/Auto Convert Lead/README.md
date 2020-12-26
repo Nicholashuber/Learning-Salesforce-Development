@@ -11,7 +11,7 @@ Lets Create a Process Builder: Click Setup → Create → Workflow & Approvals �
 Click the New button to create a new Process Builder process, and provide the process name and Description, and then click the Save button.
 <br/>
 ![Create](https://i.gyazo.com/528753475ab60594b4fbe57ed8ab1d66.png)
-
+![alt text](https://i.gyazo.com/528753475ab60594b4fbe57ed8ab1d66.png)
 <br/><br/>
 Choose an object:
 ![alt text](https://i.gyazo.com/a1ad267f3d24c7a8b57d37e5d66b2166.png)
