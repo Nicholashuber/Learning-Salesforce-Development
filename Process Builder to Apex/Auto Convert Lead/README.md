@@ -10,7 +10,7 @@ Lets automate that!
 Lets Create a Process Builder: Click Setup → Create → Workflow & Approvals → Process Builder.<br>
 Click the New button to create a new Process Builder process, and provide the process name and Description, and then click the Save button.
 <br/>
-![alt text](https://i.gyazo.com/528753475ab60594b4fbe57ed8ab1d66.png)
+![Create](https://i.gyazo.com/528753475ab60594b4fbe57ed8ab1d66.png)
 
 <br/><br/>
 Choose an object:
