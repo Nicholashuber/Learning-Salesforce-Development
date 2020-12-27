@@ -1,4 +1,4 @@
-public class SendStaticEmail {
+public class SendEmailHandler {
     
     public void SendEmail(){
         Messaging.SingleEmailMessage message = new Messaging.SingleEmailMessage();
