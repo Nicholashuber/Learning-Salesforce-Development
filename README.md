@@ -22,4 +22,4 @@ I will be updating this frequently and providing an order to what modules to tac
 
 # 8) Call API from Lightning Component
 
-# 9) Create Heroku NodeJS API and call it
+# 9) Create a Heroku API
