@@ -20,6 +20,8 @@ I will be updating this frequently and providing an order to what modules to tac
 
 # 7) Lightning Record Edit Form
 
-# 8) Call API from Lightning Component
+# 8) Lightning Quick Action
 
-# 9) Create a Heroku API
+# 9) Call API from Lightning Component
+
+# 10) Create a Heroku API
