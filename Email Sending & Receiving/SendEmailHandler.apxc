@@ -10,7 +10,7 @@ public class SendEmailHandler {
         message.plainTextBody = 'This is the message body.';
         
         Messaging.SingleEmailMessage[] messages =   new List<Messaging.SingleEmailMessage> {message};
-		    Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
+	Messaging.SendEmailResult[] results = Messaging.sendEmail(messages);
         
         if (results[0].success) {
             System.debug('The email was sent successfully.');
