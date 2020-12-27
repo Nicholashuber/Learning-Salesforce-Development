@@ -15,3 +15,9 @@ I will be updating this frequently and providing an order to what modules to tac
 
 
 # 5) Process Builder to Apex
+
+# 6) Call Apex from Lightning Component
+
+# 7) Lightning Record Edit Form
+
+# 8) Call Api from Lightning Component
