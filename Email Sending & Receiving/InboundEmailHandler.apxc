@@ -1,6 +1,7 @@
 global class InboundEmailHandler implements Messaging.InboundEmailHandler {
 	global Messaging.InboundEmailResult handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope) {
-		Messaging.InboundEmailResult result = new Messaging.InboundEmailresult();
+	
+	Messaging.InboundEmailResult result = new Messaging.InboundEmailresult();
         
         List<Contact> contList= [SELECT Id, Name, Email FROM Contact WHERE Email = :email.fromAddress LIMIT 1];
         Task taskObj = new Task();
